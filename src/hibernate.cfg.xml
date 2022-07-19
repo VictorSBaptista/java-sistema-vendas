@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/dtb-sistema-vendas?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        
+        <property name="hbm2ddl.auto">validate</property>
+        
+        <property name="show_sql">true</property>
+    
+        <mapping class="model.Cidade"/>
+        <mapping class="model.Cliente"/>
+        <mapping class="model.Compra"/>
+        <mapping class="model.ContaPagar"/>
+        <mapping class="model.ContasReceber"/>
+        <mapping class="model.Contato"/>
+        <mapping class="model.Endereco"/>
+        <mapping class="model.Estado"/>
+        <mapping class="model.Estoque"/>
+        <mapping class="model.Fornecedor"/>
+        <mapping class="model.Funcionario"/>
+        <mapping class="model.ItemCompra"/>
+        <mapping class="model.ItemVenda"/>
+        <mapping class="model.LogUsuario"/>
+        <mapping class="model.PessoaFisica"/>
+        <mapping class="model.PessoaJuridica"/>
+        <mapping class="model.Produto"/>
+        <mapping class="model.Regiao"/>
+        <mapping class="model.Venda"/>
+    </session-factory>
+</hibernate-configuration>
